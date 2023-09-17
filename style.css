@@ -36,32 +36,30 @@ body {
     height: 120px;
     width: 100%;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: 32px;
 }
 
-.operation, .result {
+.operation, .selectedOperator {
     padding: 0px 30px;
-    display: flex;
-    justify-content: right;
+    display: inline-block;
+    text-align: right;
     font-weight: 700;
 }
 
-.operation {
+.selectedOperator {
     font-size: 26px;
 }
 
 .result {
-    font-size: 35px;
-    color: rgb(255, 255, 255);
+    display: block;
+    text-align: right;
 }
 
 .buttons {
     gap: 5px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .btn {
@@ -69,14 +67,17 @@ body {
     border: 2px solid rgb(37, 37, 37);
     border-radius: 40px;
     width: 75px;
-    height: 75px;
+    height: 65px;
     color: white;
     font-weight: 900;
     font-size: 22px;
 }
 
-.lastBtn {
+.equal {
     flex: 2;
+}
+.clear {
+    width: 150px;
 }
 
 .footer {
